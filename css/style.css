@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* CSS Custom Properties for consistent theming */
 :root {
   --primary-color: #667eea;
   --secondary-color: #764ba2;
@@ -17,7 +18,29 @@
   --hover-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* Body & Typography */
+
+/* CSS: style.css for Nwogu Glory's Portfolio */
+
+/* Base Reset & CSS Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --accent-color: #f093fb;
+  --text-primary: #2d3748;
+  --bg-primary: #ffffff;
+  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Base Body & Typography Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -29,7 +52,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navigation */
+/* Fixed Navigation Bar Styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -42,6 +65,7 @@ html {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Container */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -51,6 +75,7 @@ html {
   align-items: center;
 }
 
+/* Logo/Brand Styling */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -60,12 +85,14 @@ html {
   background-clip: text;
 }
 
+/* Navigation Links Container */
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
+/* Individual Navigation Links */
 .nav-links a {
   text-decoration: none;
   color: var(--text-primary);
@@ -78,6 +105,7 @@ html {
   color: var(--primary-color);
 }
 
+/* Animated underline for nav links */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -93,7 +121,7 @@ html {
   width: 100%;
 }
 
-/* Mobile Menu */
+/* Mobile Menu Toggle (Hidden by default) */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -108,7 +136,7 @@ html {
   transition: 0.3s;
 }
 
-/* Hero Section */
+/* Hero/Home Section Styles */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -121,6 +149,7 @@ html {
   padding: 2rem 0;
 }
 
+/* Decorative overlay for hero section */
 .hero::before {
   content: '';
   position: absolute;
@@ -132,6 +161,7 @@ html {
   background-size: cover;
 }
 
+/* Hero Content Container */
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -144,12 +174,14 @@ html {
   gap: 4rem;
 }
 
+/* Hero Text Content */
 .hero-text {
   flex: 1;
   text-align: left;
   max-width: 600px;
 }
 
+/* Main Hero Heading */
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -157,6 +189,7 @@ html {
   line-height: 1.2;
 }
 
+/* Hero Subtitle */
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -164,6 +197,7 @@ html {
   animation: fadeInUp 1s ease 0.2s both;
 }
 
+/* Hero Description */
 .description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
@@ -172,6 +206,8 @@ html {
   line-height: 1.6;
 }
 
+
+/* Call-to-Action Buttons Container */
 .cta-buttons {
   display: flex;
   gap: 1rem;
@@ -180,6 +216,7 @@ html {
   margin-bottom: 2rem;
 }
 
+/* Social Media Buttons Container */
 .social-buttons {
   display: flex;
   gap: 1rem;
@@ -187,7 +224,7 @@ html {
   align-items: center;
 }
 
-/* Hero Image - Enhanced for boldness */
+/* Hero Profile Image Container - Enhanced with animations */
 .hero-image {
   flex: 0 0 auto;
   display: flex;
@@ -196,7 +233,7 @@ html {
   position: relative;
 }
 
-/* Add a glowing ring effect around the image */
+/* Animated glowing ring effect around profile image */
 .hero-image::before {
   content: '';
   position: absolute;
@@ -208,6 +245,7 @@ html {
   z-index: -1;
 }
 
+/* Inner ring for image */
 .hero-image::after {
   content: '';
   position: absolute;
@@ -218,6 +256,8 @@ html {
   z-index: -1;
 }
 
+
+/* Profile Image Styling */
 .hero-image img {
   width: 340px;
   height: 340px;
@@ -234,6 +274,7 @@ html {
   z-index: 1;
 }
 
+/* Profile Image Hover Effects */
 .hero-image img:hover {
   transform: scale(1.08) rotate(3deg);
   box-shadow: 
@@ -243,7 +284,7 @@ html {
   border-color: rgba(255, 255, 255, 1);
 }
 
-/* Buttons */
+/* General Button Styles */
 .btn {
   padding: 12px 20px;
   border: none;
@@ -258,6 +299,7 @@ html {
   gap: 0.5rem;
 }
 
+/* Primary Button Variant */
 .btn-primary {
   background: rgba(255, 255, 255, 0.9);
   color: var(--primary-color);
@@ -307,6 +349,7 @@ html {
   background-size: cover;
 }
 
+/* General Container for Content Sections */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -337,6 +380,7 @@ html {
 .skills-section {
   margin-bottom: 4rem;
 }
+
 
 .section-title {
   font-size: 2.5rem;
