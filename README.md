@@ -81,6 +81,7 @@ Validated HTML/CSS syntax and ensured responsive design across devices.
 Verified all external/internal links (GitHub, LinkedIn, downloadable CV, contact form) were working correctly.
 
 ## Live demo link
+https://portfolio-lovat-sigma-y2fqh67dkk.vercel.app/
 
 ## Deployment
 This portfolio is deployed using Vercel for fast and seamless hosting.
