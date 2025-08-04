@@ -1,3 +1,4 @@
+/* CSS: style.css with descriptive comments */
 /* Base Reset & Variables */
 * {
   margin: 0;
@@ -1193,4 +1194,46 @@ html {
 .cert-link:hover {
     transform: scale(1.1) rotate(10deg);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Contact Form Styling*/
+/* Contact Form Styling */
+.form-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #005eff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0041bf;
 }
